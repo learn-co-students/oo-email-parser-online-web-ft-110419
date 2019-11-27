@@ -7,8 +7,8 @@ class EmailAddressParser
   end
   
   def parse
-    CSV.split(", ")
-  end 
+    email_addresses.split(/, | /).uniq
+  end
   
 end
 
